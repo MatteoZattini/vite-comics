@@ -35,7 +35,7 @@
 					<img src="/img/dc-logo.png" alt="">
 				</div>
 				<div class="col-8 d-flex justify-content-between align-items-center">
-					<a v-for="link in headerLinks" href="">{{ link }}</a>
+					<a v-for="links in headerLinks" href="">{{ links }}</a>
 				</div>
 			</div>
 		</div>
