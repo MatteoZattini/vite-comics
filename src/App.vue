@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppPreFooter from './components/AppPreFooter.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppPostFooter from './components/AppPostFooter.vue';
 
 
 	export default {
@@ -11,6 +12,7 @@ import AppFooter from './components/AppFooter.vue';
 			AppMain,
 			AppPreFooter,
 			AppFooter,
+			AppPostFooter,
 		},
 
 		data() {
@@ -30,10 +32,13 @@ import AppFooter from './components/AppFooter.vue';
 </script>
 
 <template>
+
 <AppHeader />
 <AppMain />
 <AppPreFooter />
 <AppFooter />
+<AppPostFooter />
+
 </template>
 
 <style>
