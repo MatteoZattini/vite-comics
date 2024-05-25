@@ -1,5 +1,11 @@
 <script>
+import AppSingleCard from "./AppSingleCard.vue"
+
 	export default {
+components: {
+    AppSingleCard
+},
+
 		data() {
 			return {
                  fumetti: [
@@ -96,16 +102,7 @@
     <div class="container h-100 position-relative ">
         <button class="button2">CURRENT SERIES</button>
             <div class="col-12 h-100 d-flex flex-wrap justify-content-center">
-                <div v-for="element in fumetti" class="mycard">
-                    <div class="myimgcard">
-                        <img class="object-fit-cover" :src="element.thumb" alt="">
-
-                    </div>
-                    <div>
-                        <span>{{ element.series }}</span>
-                    </div>
-                </div>
-
+                <AppSingleCard v-for="elemento in fumetti" :card="elemento"/>
             </div>
             <div class="d-flex justify-content-center">
                 <button class="button1">LOAD MORE</button>
