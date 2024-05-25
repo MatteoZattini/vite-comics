@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppJumbo from './components/AppJumbotron.vue'
+import AppSeries from './components/AppSeries.vue'
 import AppPreFooter from './components/AppPreFooter.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppPostFooter from './components/AppPostFooter.vue';
@@ -13,6 +14,7 @@ import AppPostFooter from './components/AppPostFooter.vue';
 			AppHeader,
 			AppMain,
 			AppJumbo,
+			AppSeries,
 			AppPreFooter,
 			AppFooter,
 			AppPostFooter,
@@ -37,8 +39,9 @@ import AppPostFooter from './components/AppPostFooter.vue';
 <template>
 
 <AppHeader />
-<AppMain />
+
 <AppJumbo />
+<AppSeries />
 <AppPreFooter />
 <AppFooter />
 <AppPostFooter />
