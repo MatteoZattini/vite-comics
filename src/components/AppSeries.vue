@@ -93,17 +93,23 @@
 
 <template>
 <main>
-    <div class="container h-100 position-relative">
+    <div class="container h-100 position-relative ">
         <button class="button2">CURRENT SERIES</button>
             <div class="col-12 h-100 d-flex flex-wrap justify-content-center">
                 <div v-for="element in fumetti" class="mycard">
-                    <img class="object-fit-cover" :src="element.thumb" alt="">
-                    <span>{{ element.series }}</span>
+                    <div class="myimgcard">
+                        <img class="object-fit-cover" :src="element.thumb" alt="">
+
+                    </div>
+                    <div>
+                        <span>{{ element.series }}</span>
+                    </div>
                 </div>
 
+            </div>
+            <div class="d-flex justify-content-center">
                 <button class="button1">LOAD MORE</button>
             </div>
-        
     </div>
 </main>
 </template>
@@ -115,7 +121,7 @@
 
 main {
     width: 100%;
-    height: 35rem;
+    height: auto;
     background-color: #222;
 }
 
@@ -125,14 +131,19 @@ img {
     object-position: top;
 }
 
+.myimgcard {
+    width: 100%;
+    height: 12rem;
+}
+
 .col-12 {
     padding-top: 5rem;
 }
 
 .mycard {
     width: calc(100% / 6 - 2rem);
-    height: 10rem;
-    margin: 0 1rem;
+    height: auto;
+    margin:  1rem;
 
 }
 
@@ -143,6 +154,7 @@ img {
 	background: #0282f9;
 	font-weight: bold;
     height: 3rem;
+    margin: 3rem 0;
 }
 
 .button2 {
